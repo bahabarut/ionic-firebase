@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ionic-dccc4": {
+      "hosting": {
+        "app": [
+          "ionic-dccc4"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ionic-dccc4"
+  }
+}

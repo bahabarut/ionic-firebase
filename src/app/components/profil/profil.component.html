@@ -1,0 +1,30 @@
+<ion-content>
+  <div class="flex-center">
+    <ion-card>
+      <ion-card-header color="success">
+        <ion-card-title color="success">Profil</ion-card-title>
+      </ion-card-header>
+      <form [formGroup]="frm" (ngSubmit)="Guncelle()">
+      <ion-card-content>
+        <ion-item>
+          <ion-label color="success" position="floating">Ad Soyad</ion-label>
+          <ion-input type="text" color="success" placeholder="E-Posta" formControlName="displayName"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label color="success" position="floating">Telefon</ion-label>
+          <ion-input type="text" color="success" placeholder="Telefon" formControlName="tel"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating" color="success">Yönetici</ion-label>
+          <ion-select placeholder="Yönetici" color="success" formControlName="admin">
+            <ion-select-option value="1">Evet</ion-select-option>
+            <ion-select-option value="0">Hayır</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-card-content>
+
+      <ion-button type="submit" size="block" color="success">Güncelle</ion-button>
+    </form>
+    </ion-card>
+  </div>
+</ion-content>

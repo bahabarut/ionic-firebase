@@ -1,0 +1,27 @@
+<ion-content>
+  <ion-grid>
+      <div class="flex-center" *ngIf="uye | async as user else uyari">
+        <ion-card color="secondary">
+          <ion-card-header>
+            <ion-card-title>Hoş Geldiniz </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+
+          </ion-card-content>
+        </ion-card>
+      </div>
+    
+      <ng-template #uyari>
+      <div class="flex-center">
+        <ion-card color="danger">
+          <ion-card-header>
+            <ion-card-title>Uyarı!!</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Lütfen Giriş Yapınız
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ng-template>
+  </ion-grid>
+</ion-content>
